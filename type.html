@@ -1,0 +1,188 @@
+var dataList = [
+  { name: "南海诸岛", color: "#2b2461" },
+  {
+    name: "北京市",
+    color: "#2b2461"
+  },
+  {
+    name: "天津省",
+    color: "#2b2461"
+  },
+  {
+    name: "上海市",
+    color: "#b8bbdb"
+  },
+  {
+    name: "重庆市",
+    color: "#4f2153"
+  },
+  {
+    name: "河北省",
+    color: "#921a4b"
+  },
+  {
+    name: "河南省",
+    color: "#921a4b"
+  },
+  {
+    name: "云南省",
+    color: "#332267"
+  },
+  {
+    name: "辽宁省",
+    color: "#921a4b"
+  },
+  {
+    name: "黑龙江省",
+    color: "#4f2153"
+  },
+  {
+    name: "湖南市",
+    color: "#4f2153"
+  },
+  {
+    name: "安徽省",
+    color: "#4f2153"
+  },
+  {
+    name: "山东省",
+    color: "#851a51"
+  },
+  {
+    name: "新疆维吾尔自治区",
+    color: "#332267"
+  },
+  {
+    name: "江苏省",
+    color: "#4f2153"
+  },
+  {
+    name: "浙江省",
+    color: "#4f2153"
+  },
+  {
+    name: "江西省",
+    color: "#38235f"
+  },
+  {
+    name: "湖北省",
+    color: "#38235f"
+  },
+  {
+    name: "广西壮族自治区",
+    color: "#4f2153"
+  },
+  {
+    name: "甘肃省",
+    color: "#16143e"
+  },
+  {
+    name: "山西省",
+    color: "#921a4b"
+  },
+  {
+    name: "内蒙古自治区",
+    color: "#332267"
+  },
+  {
+    name: "陕西省",
+    color: "#4f2153"
+  },
+  {
+    name: "吉林省",
+    color: "#41235b"
+  },
+  {
+    name: "福建省",
+    color: "#4f2153"
+  },
+  {
+    name: "贵州省",
+    color: "#4f2153"
+  },
+  {
+    name: "广东省",
+    color: "#4f2153"
+  },
+  {
+    name: "青海省",
+    color: "#4f2153"
+  },
+  {
+    name: "西藏自治区",
+    color: "#332267"
+  },
+  {
+    name: "四川省",
+    color: "#4f2153"
+  },
+  {
+    name: "宁夏回族自治区",
+    color: "#4f2153"
+  },
+  {
+    name: "海南省",
+    color: "#4f2153"
+  },
+  {
+    name: "台湾省",
+    color: "#4f2153"
+  }
+];
+var newData = [];
+for (var i = 0; i < dataList.length; i++) {
+  console.log(dataList[i], 999);
+  newData.push({
+    name: dataList[i].name,
+    itemStyle: {
+      color: dataList[i].color
+    }
+  });
+}
+dataList.map(item => {
+  console.log(item.color, 222);
+  newData.push({
+    name: item.name,
+    itemStyle: {
+      areaColor: item.color,
+      color: item.color
+    }
+  });
+});
+newData.push({
+  name: "南海诸岛",
+  itemStyle: {
+    normal: {
+      opacity: 0,
+      label: {
+        show: false
+      }
+    }
+  }
+});
+option = {
+  visualMap: {
+    left: 26,
+    bottom: 40,
+    show: false
+  },
+  geo: {
+    map: "china",
+    regions: newData,
+    itemStyle: {
+      normal: {
+        borderColor: "rgba(0, 0, 0, 0.2)"
+      },
+      emphasis: {
+        areaColor: "pink"
+      }
+    }
+  },
+  series: [
+    {
+      type: "map",
+      geoIndex: 0,
+      data: dataList
+    }
+  ]
+};
