@@ -21,7 +21,7 @@
       :lineData2="lineData2"
     ></RightCenterLine>
   </div>
-</template>
+</template> 
 
 <script>
 import RightCenterPei from "@/components/base/RightCenterPei";
