@@ -1,0 +1,52 @@
+{
+  "typescript.check.tscVersion": false,
+  "window.zoomLevel": 0,
+  "editor.fontSize": 14,
+  "files.autoSave": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "editor.minimap.enabled": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "git.autofetch": true,
+  "eslint.validate": [
+      "javascript", //  用eslint的规则检测js文件
+      {
+        "language": "vue", // 检测vue文件
+        "autoFix": true //  为vue文件开启保存自动修复的功能
+      },
+      {
+        "language": "html",
+        "autoFix": true
+      },
+    ],
+  "eslint.options": {
+      "configFile": ".eslintrc.js"
+  },
+  "eslint.run": "onType",
+  "eslint.packageManager": "yarn",
+  "fileheader.LastModifiedBy": "liumeng",
+  "fileheader.Author": "liumeng",
+  "vetur.validation.template": true,
+  "vetur.format.enable": true,
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "workbench.settings.editor": "json",
+  "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true
+}
