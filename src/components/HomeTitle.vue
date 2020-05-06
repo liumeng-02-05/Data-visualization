@@ -49,15 +49,7 @@
 
 <script>
 import HeaderTemplate from "@/components/base/HeaderTemplate";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import HomeMap from "@/components/base/HomeMap";
-=======
-import HomeMap from "@/components/HomeMap";
->>>>>>> 数据可视化提交
-=======
-import HomeMap from "@/components/base/HomeMap";
->>>>>>> 数据可视化代码第一次提交
 // import Tempalte from "@/components/Tempalte";
 import { clock as useClock } from "../utils/clock";
 import { ref } from "vue";
