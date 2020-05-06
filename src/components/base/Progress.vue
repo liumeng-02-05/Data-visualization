@@ -1,13 +1,5 @@
 <template>
   <div class="progress">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <!-- 这个是关于echarts的图表设置 现在改为使用图片展示 -->
-=======
->>>>>>> 数据可视化提交
-=======
-    <!-- 这个是关于echarts的图表设置 现在改为使用图片展示 -->
->>>>>>> 数据可视化代码第一次提交
     <!-- <div id="progressEcharts" :style="{ width: '100%', height: '30px' }"></div> -->
     <div
       class="-datav-wraper"
